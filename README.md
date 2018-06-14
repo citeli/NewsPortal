@@ -1,4 +1,4 @@
-# NewsPortal
+# C# NewsPortal
 News Portal using DDD
 developed using:
 * DDD Solution
