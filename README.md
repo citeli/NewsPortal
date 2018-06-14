@@ -1,6 +1,6 @@
 # C# NewsPortal
 News Portal using DDD
-developed using:
+developed with:
 * DDD Solution
 * S.O.L.I.D. patterns
 * Entity Framework
