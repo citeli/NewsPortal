@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ServiceModel;
 using Application.Services;
 using Data.Repositories;
 using Domain.Interfaces.Repositories;
@@ -6,6 +7,7 @@ using Domain.Entities;
 
 namespace NewsPortalServiceWCF.NoticiaSvc
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class NoticiaService : INoticiaService
     {
         public void GravarNoticia(Noticia noticia)
