@@ -7,7 +7,5 @@ developed with:
 * Dependency Injection
 * Layers division by responsability
 * MVC pattern for presentation
-
-TODO
-* Upload by WCF webservice
-* Deploy and publish on azure service
+* Mapper
+* WCF services to save data in repository
