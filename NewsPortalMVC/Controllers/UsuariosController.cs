@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.ServiceModel;
 using System.Web.Mvc;
 using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Services;
 using NewsPortalMVC.ViewModels;
 
 namespace NewsPortalMVC.Controllers
@@ -48,7 +50,14 @@ namespace NewsPortalMVC.Controllers
                 var usuarioDomain = Mapper.Map<UsuarioViewModel, Usuario>(usuario);
                 var client = new UsuarioServiceWCF.UsuarioServiceClient();
                 client.Open();
-                client.GravarUsuario(usuarioDomain);
+                try
+                {
+                    client.GravarUsuario(usuarioDomain);
+                }
+                catch (FaultException<UsuarioService>)
+                {
+                    
+                }
                 client.Close();
                 //_usuarioApp.Add(usuarioDomain);
 
