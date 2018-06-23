@@ -72,6 +72,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -177,6 +178,16 @@
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Connected Services\NoticiaServiceWCF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\UsuarioServiceWCF\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NoticiasController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
@@ -188,6 +199,30 @@
     <Compile Include="ViewModels\UsuarioViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\NoticiaServiceWCF\NoticiaService.wsdl" />
+    <None Include="Connected Services\NoticiaServiceWCF\NoticiaService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NoticiaServiceWCF\NoticiaService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NoticiaServiceWCF\NoticiaService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UsuarioServiceWCF\UsuarioService.disco" />
+    <None Include="Connected Services\UsuarioServiceWCF\configuration91.svcinfo" />
+    <None Include="Connected Services\UsuarioServiceWCF\configuration.svcinfo" />
+    <None Include="Connected Services\UsuarioServiceWCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\NoticiaServiceWCF\NoticiaService.disco" />
+    <None Include="Connected Services\NoticiaServiceWCF\configuration91.svcinfo" />
+    <None Include="Connected Services\NoticiaServiceWCF\configuration.svcinfo" />
+    <None Include="Connected Services\NoticiaServiceWCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -201,6 +236,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Connected Services\UsuarioServiceWCF\UsuarioService.wsdl" />
+    <None Include="Connected Services\UsuarioServiceWCF\UsuarioService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UsuarioServiceWCF\UsuarioService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UsuarioServiceWCF\UsuarioService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -266,6 +311,13 @@
       <Project>{b21aa482-94d7-4069-8825-0db3756855f6}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\NoticiaServiceWCF\" />
+    <WCFMetadataStorage Include="Connected Services\UsuarioServiceWCF\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="NewsPortalServiceWCF.NoticiaSvc.NoticiaService" CodeBehind="NoticiaService.svc.cs" %>

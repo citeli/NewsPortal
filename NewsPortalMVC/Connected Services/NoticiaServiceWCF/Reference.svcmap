@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b599243c-6369-48f1-a579-15d5a3fcc4e2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55001/NoticiaSvc/NoticiaService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NoticiaService.xsd" MetadataType="Schema" ID="1c413305-b037-4f1b-b0fb-59978336fe2a" SourceId="1" SourceUrl="http://localhost:55001/NoticiaSvc/NoticiaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NoticiaService.disco" MetadataType="Disco" ID="49b1e460-7477-4b2a-bdf4-78640b1e2fc3" SourceId="1" SourceUrl="http://localhost:55001/NoticiaSvc/NoticiaService.svc?disco" />
+    <MetadataFile FileName="NoticiaService1.xsd" MetadataType="Schema" ID="146ada11-1576-4a73-a3f3-a49b39a3f892" SourceId="1" SourceUrl="http://localhost:55001/NoticiaSvc/NoticiaService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NoticiaService.wsdl" MetadataType="Wsdl" ID="7281ed31-950a-4231-b556-319da62d6a5c" SourceId="1" SourceUrl="http://localhost:55001/NoticiaSvc/NoticiaService.svc?wsdl" />
+    <MetadataFile FileName="NoticiaService2.xsd" MetadataType="Schema" ID="d6e4e5ab-095c-493c-aa3c-6f96fb70e8bf" SourceId="1" SourceUrl="http://localhost:55001/NoticiaSvc/NoticiaService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

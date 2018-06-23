@@ -46,7 +46,11 @@ namespace NewsPortalMVC.Controllers
             if (ModelState.IsValid)
             {
                 var usuarioDomain = Mapper.Map<UsuarioViewModel, Usuario>(usuario);
-                _usuarioApp.Add(usuarioDomain);
+                var client = new UsuarioServiceWCF.UsuarioServiceClient();
+                client.Open();
+                client.GravarUsuario(usuarioDomain);
+                client.Close();
+                //_usuarioApp.Add(usuarioDomain);
 
                 return RedirectToAction("Index");
             }

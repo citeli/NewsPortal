@@ -49,7 +49,11 @@ namespace NewsPortalMVC.Controllers
             if (ModelState.IsValid)
             {
                 var noticiaDomain = Mapper.Map<NoticiaViewModel, Noticia>(noticia);
-                _noticiaApp.Add(noticiaDomain);
+                var client = new NoticiaServiceWCF.NoticiaServiceClient();
+                client.Open();
+                client.GravarNoticia(noticiaDomain);
+                client.Close();
+                //_noticiaApp.Add(noticiaDomain);
 
                 return RedirectToAction("Index");
             }
